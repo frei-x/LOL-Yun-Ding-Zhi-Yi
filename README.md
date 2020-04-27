@@ -18,3 +18,24 @@ NodeJs 英雄联盟 lol 云顶之弈自动挂机刷经验程序 , 防封
 - 流程化购买卡牌等,不会系统判定为挂机
 - 自动退出游戏 ,继续寻找对局
 - 100 经验到手 ,快速刷满 30 级吧~
+- 可以在虚拟机中后台运行 , 24 小时挂机
+
+### 其他
+
+您只需要保留 index.exe 和 node_modules 文件夹,他俩在同一目录 ,管理员身份运行 index.exe 即可。
+
+#### 源码编译
+
+1. > npm install --global --production windows-build-tools
+2. > npm install -g node-gyp
+3. > node-gyp rebuild // 如果运行失败 ,请根据错误信息解决。
+4. > node index.js
+
+第一步安装 windows-build-tools 时 , 会自动安装 python27 ,如果失败可手动安装 , 并添加 python 到环境变量。
+
+### 计划
+
+1. 全部打包为单个 exe 文件
+2. DirectX 11 游戏, 模拟键盘输入存在缺陷,D、F 可能无效
+3. 支持全分辨率
+4. 更高效 更省时间的拿到第八名
