@@ -18,14 +18,19 @@ setInterval(function () {
     robot.moveMouse(1920 / 2, 1080 - 100 - 140);
     robot.mouseToggle('down', 'left');
     robot.mouseToggle('up', 'left')
-    // 按下d 再抬起
-    setTimeout(() => {
-      robot.keyToggle('d', 'down');
-      robot.keyTap("f")
-      setTimeout(() => { robot.keyToggle("d", "up") }, 300)
-    }, 1000)
   }, 2000)
+  // 按下d或f 再抬起 ,10s一次
+  setTimeout(() => {
+    let arr = ["D", "F"]
+    let random = Math.floor(Math.random() * 2) //均衡获取0到1的随机整数
+    robot.keyToggle(arr[random], 'down');
+    setTimeout(() => {
+      robot.keyToggle(arr[random], 'up');
+    }, 100)
 
+    // robot.keyTap("f")
+    // setTimeout(() => { robot.keyToggle("d", "up") }, 300)
+  }, 10000)
   // 退出对局
   setTimeout(() => {
     robot.moveMouse(1920 / 2 - 95, 1080 - 90 - 470);// 退出按钮宽度 x: 1920 / 2 - 220  ~  1920 / 2 - 50 , 减105刚好避免开始对局切换皮肤 ,同时可以点击到退出
