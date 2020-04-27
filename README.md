@@ -23,6 +23,8 @@ NodeJs 英雄联盟 lol 云顶之弈自动挂机刷经验程序 , 防封
 ### 其他
 
 您只需要保留 index.exe 和 node_modules 文件夹,他俩在同一目录 ,管理员身份运行 index.exe 即可。
+本项目通过 pkg 打包 exe ,
+主要库 api 参考 http://robotjs.io/docs/syntax
 
 #### 源码编译
 
