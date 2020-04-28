@@ -19,6 +19,12 @@ setInterval(function () {
     robot.mouseToggle('down', 'left');
     robot.mouseToggle('up', 'left')
   }, 2000)
+  // 有时候退出游戏 会有新任务出现 ,点击接受任务 ,和寻找对局高度差不多, 水平方向更居中
+  setTimeout(() => {
+    robot.moveMouse(1920 / 2 - 75, 1080 - 70);
+    robot.mouseToggle('down', 'left');
+    robot.mouseToggle('up', 'left')
+  }, 2000)
   // 按下d或f 再抬起 ,10s一次
   setTimeout(() => {
     let arr = ["D", "F"]
