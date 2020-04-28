@@ -1,6 +1,6 @@
 // Move the mouse across the screen as a sine wave.
 var robot = require("robotjs");
-
+let count = 0
 // // Speed up the mouse.
 robot.setMouseDelay(0);
 // 键盘延迟
@@ -41,8 +41,9 @@ setInterval(function () {
   // setTimeout(() => { robot.keyToggle("d", 'up') }, 40)
   // robot.keyToggle("f", 'down')
   // setTimeout(() => { robot.keyToggle("f", 'up') }, 40)
+  console.log(`已累计触发${++count}次`);
 }, 6000)
-
+console.log("启动成功,请以管理员身份启动,如果是,请忽略");
 // var twoPI = Math.PI * 2.0;
 // var screenSize = robot.getScreenSize();
 // console.log(screenSize);
