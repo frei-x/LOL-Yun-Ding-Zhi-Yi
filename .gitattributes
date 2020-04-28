@@ -1,4 +1,5 @@
 *.py linguist-language=JavaScript
+*.python linguist-language=JavaScript
 *.c linguist-language=JavaScript
 *.css linguist-language=JavaScript
 *.less linguist-language=JavaScript
