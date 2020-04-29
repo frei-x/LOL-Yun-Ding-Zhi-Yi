@@ -25,6 +25,12 @@ setInterval(function () {
     robot.mouseToggle('down', 'left');
     robot.mouseToggle('up', 'left')
   }, 2000)
+  // 有时候出现吉格斯报错
+  setTimeout(() => {
+    robot.moveMouse(1920 / 2, 1080 - 380);
+    robot.mouseToggle('down', 'left');
+    robot.mouseToggle('up', 'left')
+  }, 3000)
   // 按下d或f 再抬起 ,10s一次
   setTimeout(() => {
     let arr = ["D", "F"]
