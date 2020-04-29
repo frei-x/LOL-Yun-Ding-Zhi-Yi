@@ -24,7 +24,7 @@ setInterval(function () {
     robot.moveMouse(1920 / 2 - 75, 1080 - 70);
     robot.mouseToggle('down', 'left');
     robot.mouseToggle('up', 'left')
-  }, 2000)
+  }, 2500)
   // 有时候出现吉格斯报错
   setTimeout(() => {
     robot.moveMouse(1920 / 2, 1080 - 380);
@@ -47,9 +47,8 @@ setInterval(function () {
   setTimeout(() => {
     robot.moveMouse(1920 / 2 - 95, 1080 - 90 - 470);// 退出按钮宽度 x: 1920 / 2 - 220  ~  1920 / 2 - 50 , 减105刚好避免开始对局切换皮肤 ,同时可以点击到退出
     robot.mouseToggle('down', 'left');
-    setTimeout(() => { robot.mouseToggle('up', 'left'), 0 })
-
-  }, 5000)
+    setTimeout(() => { robot.mouseToggle('up', 'left'), 10 })
+  }, 4000)
   // setTimeout(() => { robot.keyToggle("d", 'up') }, 40)
   // robot.keyToggle("f", 'down')
   // setTimeout(() => { robot.keyToggle("f", 'up') }, 40)
